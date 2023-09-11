@@ -3,6 +3,3 @@
 | Продукт/пошукові фрази                                                                                                      |   Temperature monitoring software    | Software for measuring your personal safety |      -       |    -     |
 | Temperature & humidity monitoring software https://sensmax.eu/software/online-temperature-and-humidity-monitoring-software/ |                  3                   |                      -                      |  Shareware   |    -     |
 | SafeTeam Web Application https://www.safetybydesigninc.com/safeteam-web-application/                                        |                  -                   |                      1                      |  Shareware   |    -     |
-
-<!-- Temperature & humidity monitoring software https://sensmax.eu/software/online-temperature-and-humidity-monitoring-software/ -->
-<!-- SafeTeam Web Application https://www.safetybydesigninc.com/safeteam-web-application/ -->
