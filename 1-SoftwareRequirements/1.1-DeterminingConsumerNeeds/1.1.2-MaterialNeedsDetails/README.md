@@ -1,0 +1,1 @@
+![Mind Map Korchakovskyi](https://github.com/oleksandrblazhko/ai-215-korchakovskij/blob/with_laboratory_work_1/1-SoftwareRequirements/1.1-DeterminingConsumerNeeds/1.1.2-MaterialNeedsDetails/MindMapKorchakovskyi.jpg)
