@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2023-10-04T16:18:07.227Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 OPR/102.0.0.0" etag="6pqpXgYJhNKh0Tol0o5a" version="21.8.2" type="device">
+  <diagram name="Сторінка-1" id="tnLcLUXqHJCQnk4bmuAs">
+    <mxGraphModel dx="1329" dy="806" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-1" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="120" y="185" width="570" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-2" value="&lt;u&gt;&amp;lt;&amp;lt;Смартфон&amp;gt;&amp;gt;&lt;/u&gt;" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="180" y="255" width="180" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-3" value="&lt;u&gt;&amp;lt;&amp;lt;OC Android&amp;gt;&amp;gt;&lt;/u&gt;" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-2">
+          <mxGeometry width="150" height="140" relative="1" as="geometry">
+            <mxPoint x="10" y="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-4" value="*.apk&lt;br&gt;(Android&lt;br&gt;Studio)" style="rounded=0;whiteSpace=wrap;html=1;align=right;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-2">
+          <mxGeometry x="45" y="112.5" width="90" height="62.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-5" value="" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-2">
+          <mxGeometry x="22.5" y="125" width="33.75" height="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#FFFFFF;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-2">
+          <mxGeometry x="22.5" y="150" width="33.75" height="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="401.3333384195964" y="455" as="sourcePoint" />
+            <mxPoint x="400" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-8" value="&lt;u&gt;&amp;lt;&amp;lt;Server&amp;gt;&amp;gt;&lt;/u&gt;" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;fillColor=#000000;strokeColor=#FFFFFF;fontColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="440" y="255" width="210" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-9" value="&lt;u&gt;&amp;lt;&amp;lt;GCP&amp;gt;&amp;gt;&lt;/u&gt;" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-8">
+          <mxGeometry width="180" height="140" relative="1" as="geometry">
+            <mxPoint x="10" y="50" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-10" value="&lt;u&gt;&amp;lt;&amp;lt;FireBase&amp;gt;&amp;gt;&lt;/u&gt;" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-8">
+          <mxGeometry x="20" y="90" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-11" value="key-value" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;fontColor=#FFFFFF;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="SDawg5pdEoXjvyeKrGQc-8">
+          <mxGeometry x="65" y="130" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-12" value="" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0;exitDx=95;exitDy=0;exitPerimeter=0;entryX=0.48;entryY=1.006;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="SDawg5pdEoXjvyeKrGQc-2" target="SDawg5pdEoXjvyeKrGQc-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="445" as="sourcePoint" />
+            <mxPoint x="550" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-13" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;strokeColor=#FFFFFF;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="250" y="495" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-14" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=200;entryDy=95;entryPerimeter=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="SDawg5pdEoXjvyeKrGQc-13" target="SDawg5pdEoXjvyeKrGQc-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="445" as="sourcePoint" />
+            <mxPoint x="550" y="395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SDawg5pdEoXjvyeKrGQc-15" value="Сенсорний екран" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="235" y="535" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
