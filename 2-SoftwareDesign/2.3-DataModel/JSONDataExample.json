@@ -1,0 +1,45 @@
+{
+  "Users": {
+    "1": {
+      "name": "Katy Perry",
+      "email": "katyperry@mail.com",
+      "age": 38,
+      "role": "Consumer"
+    }
+  },
+  "Consumers": {
+    "1": {
+      "previous_annoyance_level": [
+        { "check_time": "2022-10-11T00:00:00", "annoyance_level": "Average" },
+        { "check_time": "2022-10-11T21:00:00", "annoyance_level": "Low" },
+        { "check_time": "2022-10-12T08:00:00", "annoyance_level": "High" }
+      ],
+      "previous_tempreture_level": [
+        { "check_time": "2022-10-11T00:00:00", "tempreture": "5°C" },
+        { "check_time": "2022-10-11T21:00:00", "tempreture": "7°C" },
+        { "check_time": "2022-10-12T08:00:00", "tempreture": "12°CS" }
+      ]
+    }
+  },
+  "annoyance": {
+    "1": {
+      "check_time": "2022-10-11T00:00:00",
+      "annoyance_level": "Average"
+    }
+  },
+  "tempreture": {
+    "1": { "check_time": "2022-10-11T00:00:00", "tempreture": "5°C" }
+  },
+  "notification": {
+    "1": {
+      "type": "Push notification",
+      "topic": "Annoyance",
+      "text": "We detected an average level of annoyance. We recommend you to take a break and rest, before continuing your job"
+    },
+    "2": {
+      "type": "Email notification",
+      "topic": "Tempreture",
+      "text": "Current tempreture in your region is 7°C. Annoyance level of your coworkers might be increasing due to the cold they experince. We recommend you to be careful among others and in the conversations."
+    }
+  }
+}

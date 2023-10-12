@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "title": "Record",
+  "description": "Record of users, Consumers, annoyance, tempreture and notifications",
+  "properties": {
+    "Users": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "email": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "age": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "role": {
+          "type": "string",
+          "maxLength": 30
+        }
+      },
+      "required": ["name", "email", "age", "role"]
+    },
+    "Consumers": {
+      "type": "object",
+      "properties": {
+        "previous_annoyance_level": {
+          "type": "object",
+          "propertires": {
+            "check_time": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "annoyance_level": {
+              "type": "string",
+              "maxLength": 20
+            }
+          },
+          "required": ["check_time", "annoyance_level"]
+        },
+        "previous_tempreture_level": {
+          "type": "object",
+          "propertires": {
+            "check_time": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "tempreture": {
+              "type": "number",
+              "maximum": 60
+            }
+          },
+          "required": ["check_time", "tempreture"]
+        }
+      },
+      "required": []
+    },
+    "annoyance": {
+      "type": "object",
+      "properties": {
+        "check_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "annoyance_level": {
+          "type": "string",
+          "maxLength": 20
+        }
+      },
+      "required": ["check_time", "annoyance_level"]
+    },
+    "tempreture": {
+      "type": "object",
+      "properties": {
+        "check_time": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "tempreture": {
+          "type": "number",
+          "maximum": 60
+        }
+      },
+      "required": ["check_time", "tempreture"]
+    },
+    "notification": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "topic": {
+          "type": "string",
+          "maxLength": 30
+        },
+        "text": {
+          "type": "number",
+          "maxLength": 200
+        }
+      },
+      "required": ["type", "topic", "text"]
+    }
+  },
+  "required": ["Users"]
+}
