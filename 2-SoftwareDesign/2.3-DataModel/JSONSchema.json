@@ -50,15 +50,80 @@
               "type": "string",
               "format": "date-time"
             },
-            "tempreture": {
+            "actual_tempreture": {
               "type": "number",
               "maximum": 60
+            },
+            "feeling_tempreture": {
+              "type": "number",
+              "maximum": 60
+            },
+            "humidity": {
+              "type": "number",
+              "maximum": 100,
+              "minimum": 0
+            },
+            "wind_speed": {
+              "type": "number",
+              "maximum": 400,
+              "minimum": 0
             }
           },
-          "required": ["check_time", "tempreture"]
+          "required": [
+            "check_time",
+            "actual_tempreture",
+            "feeling_tempreture",
+            "humidity",
+            "wind_speed"
+          ]
         }
       },
       "required": []
+    },
+    "Technical_Support": {
+      "type": "object",
+      "properties": {
+        "specialization": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "position": {
+          "type": "string",
+          "maxLength": 30
+        }
+      },
+      "required": ["specialization", "position"]
+    },
+    "World_Weather_Organization": {
+      "type": "object",
+      "properties": {
+        "actual_tempreture": {
+          "type": "number",
+          "maximum": 60,
+          "miniimmum": -90
+        },
+        "feeling_tempreture": {
+          "type": "number",
+          "maximum": 60,
+          "miniimmum": -90
+        },
+        "humidity": {
+          "type": "number",
+          "maximum": 100,
+          "minimum": 0
+        },
+        "wind_speed": {
+          "type": "number",
+          "maximum": 400,
+          "minimum": 0
+        }
+      },
+      "required": [
+        "actual_tempreture",
+        "feeling_tempreture",
+        "humidity",
+        "wind_speed"
+      ]
     },
     "annoyance": {
       "type": "object",
@@ -81,12 +146,34 @@
           "type": "string",
           "format": "date-time"
         },
-        "tempreture": {
+        "actual_tempreture": {
           "type": "number",
-          "maximum": 60
+          "maximum": 60,
+          "minimum": -90
+        },
+        "feeling_tempreture": {
+          "type": "number",
+          "maximum": 60,
+          "minimum": -90
+        },
+        "humidity": {
+          "type": "number",
+          "maximum": 100,
+          "minimum": 0
+        },
+        "wind_speed": {
+          "type": "number",
+          "maximum": 400,
+          "minimum": 0
         }
       },
-      "required": ["check_time", "tempreture"]
+      "required": [
+        "check_time",
+        "actual_tempreture",
+        "feeling_tempreture",
+        "humidity",
+        "wind_speed"
+      ]
     },
     "notification": {
       "type": "object",
