@@ -192,6 +192,23 @@
         }
       },
       "required": ["type", "topic", "text"]
+    },
+    "technical_question": {
+      "type": "object",
+      "properties": {
+        "question": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "answer": {
+          "type": "string",
+          "maxLength": 300
+        },
+        "isAnswered": {
+          "type": "boolean"
+        }
+      },
+      "required": ["question", "isAnswered"]
     }
   },
   "required": ["Users"]

@@ -89,5 +89,12 @@
       "topic": "Tempreture",
       "text": "Current tempreture in your region is 7°C. Annoyance level of your coworkers might be increasing due to the cold they experince. We recommend you to be careful among others and in the conversations."
     }
+  },
+  "technical_question": {
+    "1": {
+      "question": "How can I link my google account to this app?",
+      "answer": "You can do that by going into the account settings and choosing option 'Link my google account'",
+      "isAnswered": true
+    }
   }
 }
