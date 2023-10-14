@@ -1,0 +1,100 @@
+{
+  "Users": {
+    "1": {
+      "name": "Katy Perry",
+      "email": "katyperry@mail.com",
+      "age": 38,
+      "role": "Consumer"
+    },
+    "2": {
+      "name": "Will Smith",
+      "email": "smithwill@mail.com",
+      "age": 55,
+      "role": "Technical Support"
+    }
+  },
+  "Consumers": {
+    "1": {
+      "previous_annoyance_level": [
+        { "check_time": "2022-10-11T00:00:00", "annoyance_level": "Average" },
+        { "check_time": "2022-10-11T21:00:00", "annoyance_level": "Low" },
+        { "check_time": "2022-10-12T08:00:00", "annoyance_level": "High" }
+      ],
+      "previous_tempreture_level": [
+        {
+          "check_time": "2022-10-11T00:00:00",
+          "actual_tempreture": "5°C",
+          "feeling_tempreture": "0°C",
+          "humidity": "54%",
+          "wind_speed": "10km/h"
+        },
+        {
+          "check_time": "2022-10-11T21:00:00",
+          "actual_tempreture": "7°C",
+          "feeling_tempreture": "3°C",
+          "humidity": "74%",
+          "wind_speed": "4km/h"
+        },
+        {
+          "check_time": "2022-10-12T08:00:00",
+          "actual_tempreture": "12°C",
+          "feeling_tempreture": "9°C",
+          "humidity": "64%",
+          "wind_speed": "4km/h"
+        }
+      ]
+    }
+  },
+  "Technical_support": {
+    "1": {
+      "specialization": "Hardware specialist",
+      "position": "Chat support manager"
+    },
+    "2": {
+      "specialization": "Software specialist",
+      "position": "Phone support manager"
+    }
+  },
+  "World_Weather_Organization": {
+    "1": {
+      "actual_tempreture": "17°C",
+      "feeling_tempreture": "14°C",
+      "humidity": "59%",
+      "wind_speed": "14km/h"
+    }
+  },
+  "annoyance": {
+    "1": {
+      "check_time": "2022-10-11T00:00:00",
+      "annoyance_level": "Average"
+    }
+  },
+  "tempreture": {
+    "1": {
+      "check_time": "2022-10-11T00:00:00",
+      "actual_tempreture": "5°C",
+      "feeling_tempreture": "0°C",
+      "humidity": "54%",
+      "wind_speed": "10km/h"
+    }
+  },
+  "notification": {
+    "1": {
+      "type": "Push notification",
+      "topic": "Annoyance",
+      "text": "We detected an average level of annoyance. We recommend you to take a break and rest, before continuing your job"
+    },
+    "2": {
+      "type": "Email notification",
+      "topic": "Tempreture",
+      "text": "Current tempreture in your region is 7°C. Annoyance level of your coworkers might be increasing due to the cold they experince. We recommend you to be careful among others and in the conversations."
+    }
+  },
+  "technical_question": {
+    "1": {
+      "question": "How can I link my google account to this app?",
+      "answer": "You can do that by going into the account settings and choosing option 'Link my google account'",
+      "isAnswered": true
+    }
+  }
+}
