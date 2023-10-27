@@ -1,6 +1,6 @@
 @startuml
 
-title UML-діаграма розгортання ПП (PL рівень)
+title UML-Deployment
 
 skinparam componentStyle uml1
 
