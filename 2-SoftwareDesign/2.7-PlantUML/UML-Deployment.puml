@@ -1,0 +1,17 @@
+@startuml
+
+title UML-діаграма розгортання ПП (PL рівень)
+
+skinparam componentStyle uml1
+
+node "<<Smartphone>>" as smartphone {
+node "<<OC Android>>" {
+component [ *.apk(Android Studio)]
+}
+}
+
+interface TouchScreen
+
+TouchScreen - smartphone
+
+@enduml
