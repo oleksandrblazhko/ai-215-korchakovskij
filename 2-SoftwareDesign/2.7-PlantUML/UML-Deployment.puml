@@ -5,9 +5,9 @@ title UML-Deployment
 skinparam componentStyle uml1
 
 node "<<Smartphone>>" as smartphone {
-node "<<OC Android>>" {
-component [ *.apk(Android Studio)]
-}
+    node "<<OC Android>>" {
+        component [ *.apk(Android Studio)]
+    }
 }
 
 interface TouchScreen
