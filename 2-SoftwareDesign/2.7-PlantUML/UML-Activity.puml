@@ -1,0 +1,23 @@
+@startuml
+
+title UML Activity Diagram for register scenario
+
+start
+:User enters email and password;
+
+if(User's email and password are valid) then (yes)
+
+  if (Email is in use?) then (yes)
+    :User account successfully registered;
+    :Display a success message "Your account has been created successfully";
+  else (no)
+    :Display an error message "Email is already in use";
+  endif
+
+else (no) 
+  :Display an error with message "Email and password do not meet the requirements";
+endif
+
+stop
+
+@enduml

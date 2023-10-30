@@ -1,0 +1,80 @@
+@startuml
+
+left to right direction
+title UML-ConceptClasses
+
+class "User" {
+  -name: string
+  -email: string
+  -age: int
+  -role: string
+  +checkTempretureLevel()
+  +checkAnnoyanceLevel()
+}
+
+class "Consumer" {
+  -previous_tempreture_level: array
+  -previous_annoyance_level: array
+  +sendTechnicalQuestion(text: string)
+  +checkPreviousTempretureLevel()
+  +checkPreviousAnnoyanceLevel()
+}
+
+class "Technical_Support" {
+  -specialization: string
+  -position: string
+  +answerTechhnicalQuestion()
+}
+
+class "World_Weather_Organization" {
+  -actual_tempreture: int
+  -feeling_tempreture: int
+  -humidity: int
+  -wind_speedL int
+  +sendTempretureData()
+}
+
+class "annoyance" {
+  -check_time: date
+  -annoyance_level: string
+  +sendNotification()
+}
+
+class "tempreture" {
+  -check_time: date
+  -actual_tempreture: int
+  -feeling_tempreture: int
+  -humidity: int
+  -wind_speedL int
+  +sendNotification()
+  +calculateAnnoyanceLevel()
+}
+
+class "notification" {
+  -type: string
+  -topic: string
+  -text: string
+}
+
+class "technical_question" {
+  -question: string
+  -answer: string
+  -isAnswered: boolean
+}
+
+
+Consumer --|> User
+Technical_Support --|> User
+
+User "1" --> "*" annoyance : send
+User "1" --> "*" tempreture : send
+
+Consumer "1" --> "*" technical_question : send
+Technical_Support "1" --> "*" technical_question : answer
+
+World_Weather_Organization "1" --> "*" tempreture : send
+
+annoyance "1" --> "*" notification : send
+tempreture "1" --> "*" notification : send
+
+@enduml

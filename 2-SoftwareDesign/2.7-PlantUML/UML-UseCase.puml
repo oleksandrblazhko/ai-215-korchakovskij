@@ -1,0 +1,35 @@
+@startuml
+
+title Use Case Diagram
+left to right direction
+actor Користувач as User
+actor Споживач as Consumer
+actor WorldWeatherOrganization as World_Weather_Organization
+actor ТехнічнаПідтримка as Technical_Support
+
+rectangle Software {
+
+    usecase "Надсилання та отримання повідомлень про температуру" as temperature_messages
+    usecase "Отримання повідомлення про можливу роздратованість оточуючих" as annoyance_messages
+    usecase "Аналіз наданої інформації" as received_data_analyses
+    usecase "Надання та технічних питань та відповідей на них" as technical_questions
+    usecase "Авторизація" as auth
+
+    received_data_analyses .> annoyance_messages : include
+    annoyance_messages .> temperature_messages : include
+
+    Consumer -- temperature_messages
+    Consumer -- annoyance_messages
+    Consumer -- received_data_analyses
+    Consumer -- technical_questions
+
+    Technical_Support -- technical_questions
+
+    World_Weather_Organization -- temperature_messages
+
+    User -- auth
+    User -- Consumer
+    User -- Technical_Support
+}
+
+@enduml
