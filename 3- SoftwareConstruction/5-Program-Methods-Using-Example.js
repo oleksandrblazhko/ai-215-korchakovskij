@@ -6,7 +6,7 @@ const TempretureCheck = () => {
 
   // Метод для перевірки та додавання даних до бази даних
 
-  const handleSubmit = async (e) => {
+  const checkTempretureLevel() = async (e) => {
     e.preventDefault();
 
     const { region, date } = e.target;
