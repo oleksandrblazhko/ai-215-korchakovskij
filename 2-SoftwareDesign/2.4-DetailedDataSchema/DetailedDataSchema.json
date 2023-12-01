@@ -138,8 +138,7 @@
             "specialization": {
               "description": "Спеціалізація фахівця",
               "type": "string",
-              "minLength": 0,
-              "maxLength": 30
+              "pattern": "^(?!.*[/|\\#@%$]).{6,30}$"
             },
             "position": {
               "description": "Посада фахівця",
